@@ -1,7 +1,7 @@
-const webpack = require('webpack');
-const path = require('path');
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const webpack = require('webpack')
+const path = require('path')
+const merge = require('webpack-merge')
+const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -9,17 +9,15 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     hot: true,
     historyApiFallback: true,
-  }
-});
+  },
+})
