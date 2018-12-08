@@ -5,7 +5,7 @@
   "root": true,
   "rules": {
     "semi": [2, "never"],
-    "indent": ["error", 2],
+    "indent": ["error", 2, {"SwitchCase" : 1}],
     "react/prefer-stateless-function": "warn",
     "react/self-closing-comp": [
       "warn",
@@ -29,8 +29,6 @@
       }
     ],
     "react/require-default-props": 0,
-    "jsx-a11y/href-no-hash": "off",
-    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
     "react/jsx-boolean-value": ["warn", "never"],
     "react/jsx-closing-bracket-location": ["warn", "after-props"],
     "react/jsx-curly-spacing": ["warn", "never"],
