@@ -1,0 +1,99 @@
+.view-service {
+  &__form {
+
+  }
+
+  &__label {
+    display: block;
+    margin: 0 0 16px;
+
+    &-text {
+      display: inline-block;
+      margin: 0 0 6px;
+    }
+  }
+
+  &__textarea,
+  &__input {
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 1;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  &__textarea {
+    // border-radius: 10px;
+    width: 100% !important;
+  }
+
+  &__input {
+  }
+
+  &__button {
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #44bd5d;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+  }
+
+  &__message {
+    padding: 10px 0;
+    line-height: 1.2;
+  }
+
+  &__services {
+    padding: 0 0 20px;
+
+    &-count {
+      border-radius: 41px;
+      background-color: #4193d2;
+      display: inline-block;
+      padding: 4px 8px;
+      line-height: 1;
+      margin: 0 6px;
+      color: #fff;
+    }
+  }
+
+  &__loading {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  &-map {
+    display: flex;
+    margin: 50px 0 0;
+
+    &__left {
+      flex: 0 1 70%;
+    }
+
+    &__right {
+      flex: 0 1 30%;
+      padding: 0 0 0 30px;
+    }
+  }
+
+  &__map {
+    height: 400px;
+  }
+
+  &-data {
+    &__label {
+      font-weight: 600;
+      display: inline-block;
+      padding-right: 4px;
+    }
+  }
+}
