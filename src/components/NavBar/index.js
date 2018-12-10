@@ -37,7 +37,7 @@ const ConnectedNavBar = props => {
               className="nav-bar__link nav-bar-logout"
               onClick={logout}
             >
-              Logout
+              Log out
             </button>
           </li>
         )}
