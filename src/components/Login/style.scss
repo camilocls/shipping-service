@@ -1,0 +1,47 @@
+.view-login {
+  &__form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1px;
+    color: #666;
+  }
+
+  &__button {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 30px;
+    border: 0;
+    font-size: 18px;
+    color: #666;
+    padding: 14px 36px;
+
+    &:hover {
+      background: #ccc;
+    }
+  }
+
+  &__loading {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  &__note {
+    text-align: center;
+    margin: 30px 0 0;
+  }
+}
