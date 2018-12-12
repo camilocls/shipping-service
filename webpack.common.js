@@ -1,6 +1,7 @@
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 
 module.exports = {
@@ -52,6 +53,11 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
+    new CopyWebpackPlugin([
+      {
+        from: '_redirects',
+      },
+    ]),
     new Dotenv({
       systemvars: true,
     }),
