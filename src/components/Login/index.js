@@ -93,7 +93,9 @@ class ConnectedLogin extends Component {
             )}
           </form>
           <div className="view-login__note">
-            Add any valid email and any password.
+            User: eve.holt@reqres.in
+            <br />
+            Password: cityslicka
           </div>
         </div>
       </div>
